@@ -28,7 +28,8 @@ ldconfig
 ```
  
 ## 编译安装完毕后，就可以删除刚才下载和解压的文件
-```cd ..
+```
+cd ..
 rm -rf libsodium-${libsodiumr_ver}
 libsodium-${libsodiumr_ver}.tar.gz
 ```
