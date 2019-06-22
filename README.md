@@ -1,5 +1,5 @@
 # How to install libsodium
-Installation and update of libsodium for Centos
+Installation and update of libsodium for Centos / Debian
 
 
 
