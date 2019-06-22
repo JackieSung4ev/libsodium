@@ -20,16 +20,17 @@ yum -y groupinstall "Development Tools"
 
  
 ## 下载最新 libsodium版本编译文件：
-```wget https://github.com/jedisct1/libsodium/releases/download/${libsodiumr_ver}/libsodium-${libsodiumr_ver}.tar.gz
-tar -xzf libsodium-${libsodiumr_ver}.tar.gz && cd libsodium-${libsodiumr_ver}
-./configure && make -j2 && make install
-echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
-ldconfig
+```
+wget https://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.gz
+tar -xzf libsodium-1.0.18.tar.gz && cd libsodium-1.0.18
+./configure
+make && make check
+sudo make install
 ```
  
 ## 编译安装完毕后，就可以删除刚才下载和解压的文件
 ```
 cd ..
-rm -rf libsodium-${libsodiumr_ver}
-libsodium-${libsodiumr_ver}.tar.gz
+rm -rf libsodium-1.0.18
+libsodium-1.0.18.tar.gz
 ```
